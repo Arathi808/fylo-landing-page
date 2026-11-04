@@ -203,6 +203,7 @@ body {
     max-width: 1100px; 
     margin: 100px auto; 
     padding: 30px; 
+
 }
 .quote { 
     position: absolute; 
@@ -250,12 +251,13 @@ body {
 .early-access {
     background-color: hsl(217, 28%, 15%);
     width: 70%;
-    margin: 100px auto 0;
+    margin: 50px auto 0;
     padding: 40px 60px;
     text-align: center;
     border-radius: 8px;
-    /* position: relative; */
-    /* z-index: 2; */
+    position: relative;
+    z-index:1;
+    transform: translateY(50%);
 }
 
 .early-access h2 {
@@ -298,4 +300,80 @@ body {
     border-radius: 30px;
     cursor: pointer;
 }
+
+
+.footer {
+   background-color: hsl(216, 53%, 9%);
+    padding: 180px 60px 60px;
+    color: white;
+}
+.footer-logo img {
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.location {
+    display: flex;
+    gap: 20px;
+    width: 30%;
+}
+.location img {
+    width: 15px;
+    height: 20px;
+}
+.location p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.contact img {
+    width: 18px;
+    height: 18px;
+}
+.contact p {
+    font-size: 13px;
+    margin: 0;
+}
+
+.footer-links p {
+    font-size: 14px;
+    margin: 0 0 15px;
+    cursor: pointer;
+}
+.social {
+    display: flex;
+    gap: 15px;
+}
+.social a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.social a:hover {
+    color: hsl(176, 68%, 64%);
+    border-color: hsl(176, 68%, 64%);
+}
+
 
