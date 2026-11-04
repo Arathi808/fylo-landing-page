@@ -247,3 +247,55 @@ body {
     font-size: 10px; 
     color: rgb(188, 188, 188); 
 }
+.early-access {
+    background-color: hsl(217, 28%, 15%);
+    width: 70%;
+    margin: 100px auto 0;
+    padding: 40px 60px;
+    text-align: center;
+    border-radius: 8px;
+    /* position: relative; */
+    /* z-index: 2; */
+}
+
+.early-access h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.early-access p {
+    color: rgb(188, 188, 188);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.email-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.email-box input {
+    flex: 1;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    font-size: 14px;
+}
+
+.email-box button {
+    border: none;
+    background-image: linear-gradient(
+        to right,
+        hsl(176, 68%, 64%),
+        hsl(198, 60%, 50%)
+    );
+    color: white;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
