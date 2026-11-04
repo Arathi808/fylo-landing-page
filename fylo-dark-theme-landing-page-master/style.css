@@ -1,0 +1,249 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: hsl(217, 28%, 15%);
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navleft {
+  display: flex;
+  margin-top: 80px;
+  padding-left: 80px;
+}
+
+.navright {
+  color: rgb(188, 188, 188);
+  display: flex;
+}
+
+.navright ul {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 80px;
+  margin-top: 80px;
+  font-size: 20px;
+}
+
+/* Intro Image */
+.image1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  position: relative;
+  z-index: 2;
+}
+
+.image1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Curvy Background Image Layer */
+.image2 {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 900px;  
+  left: 0;
+  z-index: 1;
+}
+
+.image2 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Heading Section */
+.heading {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 700px;
+  margin: 60px auto 0 auto;
+  padding: 0 20px;
+}
+
+.heading h1 {
+  line-height: 1.4;
+  font-size: 40px;
+  margin-bottom: 20px;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.para-btn p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgb(188, 188, 188);
+  margin-bottom: 30px;
+}
+ 
+.heading button.btn {
+  border: none;
+  background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  color: white;
+  font-weight: 600;
+  padding: 15px 80px;
+  border-radius: 50px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+/* Features Grid Section (Dark Box Container) */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 80px;
+    /* position: relative;
+    z-index: 2; */
+    background-color: transparent;
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 50px 60px;
+    border-radius: 12px;
+}
+
+.card {
+  text-align: center;
+}
+
+.card img {
+  margin-bottom: 25px;
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: rgb(188, 188, 188);
+  line-height: 1.5;
+  font-size: 15px;
+  margin: 0;
+}
+
+/* Stay Productive Hero Section */
+.hero {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 150px auto;
+  padding: 0 20px;
+}
+
+.hero-image, 
+.hero-content {
+  flex: 1;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.hero-content p {
+  color: rgb(188, 188, 188);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.hero-content a {
+  color: hsl(176, 68%, 64%);
+  text-decoration: none;
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+  padding-bottom: 3px;
+}
+.content-bg {
+    width: 100%;
+    background-color: hsl(218, 28%, 13%);
+    position: relative;
+    z-index: 2;
+    }
+
+.testimonials {
+    position: relative; 
+    display: flex; 
+    justify-content: space-between; 
+    gap: 25px; 
+    max-width: 1100px; 
+    margin: 100px auto; 
+    padding: 30px; 
+}
+.quote { 
+    position: absolute; 
+    top: 0;
+    left: 25px; 
+    width: 50px; 
+    z-index: 0; 
+}
+/* Review Cards */ 
+.review { 
+    /* position: relative;  */
+    z-index: 1; 
+    background-color: hsl(219, 30%, 18%); 
+    padding: 25px; 
+    border-radius: 5px; 
+    flex: 1; 
+    color: white; 
+} 
+.review p {
+    font-size: 14px;
+    line-height: 1.6; 
+    color: rgb(210, 210, 210); 
+} 
+/* User Details */ 
+.user { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    margin-top: 20px; 
+}
+.user img { 
+    width: 35px; 
+    height: 35px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+} 
+.user h4 { 
+    font-size: 12px; 
+    margin: 0 0 5px; 
+} 
+.user small { 
+    font-size: 10px; 
+    color: rgb(188, 188, 188); 
+}
